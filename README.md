@@ -151,9 +151,9 @@ LabOS 采用 **开源核心 + 付费增值** 模式：
 |----|------|
 | **ETH / ERC-20** (USDT, USDC 等) | `0xc6B4720835E6C3CB58618B4df26B64F595C30202` |
 
-### 微信 / 支付宝
+### 支付宝
 
-*即将添加收款码*
+<img src="docs/alipay-qr.jpg" width="300" alt="支付宝收款码">
 
 ### GitHub Sponsors
 
