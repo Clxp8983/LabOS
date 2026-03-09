@@ -200,6 +200,23 @@ Browse [open issues](https://github.com/YUANXICHE98/LabOS/issues) for specific t
 
 ---
 
+## Contributor Incentives | 贡献者激励
+
+We believe in rewarding contributions. See **[GOVERNANCE.md](./GOVERNANCE.md)** for the full program.
+
+| Level | What You Get |
+|-------|-------------|
+| **First PR merged** | Name in Contributors Wall, contributor badge |
+| **3+ PRs merged** | Free Skill Library access (when launched), early beta access |
+| **10+ PRs or 1 major feature** | Core Contributor role, **30% revenue share** on Skills you contribute, co-authorship on papers |
+| **Bounty issues** | Cash rewards (crypto/Sponsors) for selected high-priority tasks |
+
+All contribution types count equally: code, docs, translations, bug reports, research methodologies, and design.
+
+代码不是唯一的贡献方式——文档、翻译、Bug 报告、研究方法论、设计都同等计算。
+
+---
+
 ## Support the Project | 支持项目
 
 If LabOS helps your research, consider supporting its development:
@@ -209,14 +226,29 @@ If LabOS helps your research, consider supporting its development:
 - 💰 **Sponsor** — help sustain development
 
 ### Crypto | 加密货币
-<!-- Add your wallet addresses below -->
-<!-- ETH: `0x...` -->
-<!-- BTC: `bc1...` -->
+
+| Chain | Address |
+|-------|---------|
+| **ETH / ERC-20** (USDT, USDC, etc.) | `0xc6B4720835E6C3CB58618B4df26B64F595C30202` |
 
 ### WeChat / Alipay | 微信 / 支付宝
-<!-- Add QR code images: ![WeChat](docs/wechat-qr.png) -->
 
-> To add your donation info: edit this section and push, or send me your wallet addresses / QR code images.
+*Coming soon — 即将添加收款码*
+
+### GitHub Sponsors
+
+Click the **"Sponsor"** button at the top of this repo to support via GitHub Sponsors.
+
+通过仓库顶部的 "Sponsor" 按钮支持本项目。
+
+---
+
+## Contributors | 贡献者
+
+<!-- Contributors wall - auto-updated -->
+<a href="https://github.com/YUANXICHE98/LabOS/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=YUANXICHE98/LabOS" />
+</a>
 
 ---
 
